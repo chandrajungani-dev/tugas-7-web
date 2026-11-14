@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas HTML5 & CSS Lanjutan</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <!-- Header & Navigasi Semantik HTML5 -->
+    <header>
+        <h1>Portal Informasi Destinasi Wisata</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama (Main Content) dengan Section & Article -->
+    <main>
+        <section id="artikel">
+            <h2>Artikel Pilihan</h2>
+            
+            <article>
+                <h3>Keindahan Alam Indonesia</h3>
+                <p><time datetime="2026-06-06">6 Juni 2026</time></p>
+                <p>Indonesia memiliki kekayaan alam yang luar biasa, mulai dari sabana yang luas hingga pegunungan hijau yang menenangkan dengan nuansa bumi (earth tone).</p>
+            </article>
+
+            <article>
+                <h3>Eksplorasi Budaya Lokal</h3>
+                <p><time datetime="2026-06-07">7 Juni 2026</time></p>
+                <p>Kearifan lokal dan tradisi yang dilestarikan menjadi daya tarik utama bagi para pelancong domestik maupun mancanegara.</p>
+            </article>
+        </section>
+
+        <!-- Aside (Konten Samping / Figure dengan Gambar Pribadi) -->
+        <aside>
+            <figure>
+                <img src="images.jpg" alt="Foto Dokumentasi" style="width: 100%; border-radius: 8px;" />
+                <figcaption>Dokumentasi Perjalanan - <mark>Eksklusif</mark></figcaption>
+            </figure>
+        </aside>
+    </main>
+
+    <!-- Bagian Form dengan Atribut HTML5 (Autocomplete & Autofocus) -->
+    <section class="form-section">
+        <h3>Buku Tamu / Pendaftaran</h3>
+        <form action="action_page.php" autocomplete="on" novalidate>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="fname" autofocus required><br>
+
+            <label>Alamat E-mail:</label>
+            <input type="email" name="user_email" autocomplete="off"><br>
+
+            <label>Tanggal Kunjungan:</label>
+            <input type="date" name="visit_date"><br>
+
+            <input type="submit" value="Kirim Data">
+        </form>
+    </section>
+
+    <footer>
+        <p> Tugas HTML5 & CSS</p>
+    </footer>
+
+</body>
+</html>
